@@ -1,0 +1,13 @@
+{
+    "name": "com.tojynick.utilities",
+    "version": "0.1.0",
+    "displayName": "Unity Utilities",
+    "description": "Helpful tools and scripts for Unity 🛠️",
+    "unity": "2021.3",
+    "author" :
+    {
+        "name": "tojynick",
+        "email": "tojynick@protonmail.com",
+        "url": "https://tojynick.me"
+    }
+}
