@@ -1,2 +1,4 @@
-# Unity-Utilities
-Helpful tools and scripts for Unity 🛠️
+# Unity Utilities
+
+## ⚠️ Warning! Work in progress! ⚠️
+Sorry, it is unusable right now 😥
