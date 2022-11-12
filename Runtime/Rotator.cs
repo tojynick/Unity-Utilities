@@ -2,73 +2,75 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public enum RotationAxis
+namespace Utilities.Rotator
 {
-    X,Y,Z
-}
-
-public class Rotator : MonoBehaviour
-{
-    [SerializeField] private Space defaultSpace;
-    [SerializeField] private RotationAxis defaultAxis;
-    [SerializeField] private float speed;
-    [SerializeField] private bool startRotatingOnStart = true;
-
-    private bool _isRotating;
-    private Vector3 _axis;
-    
-    public float Speed => speed;
-
-
-    public void StartRotation()
+    public enum RotationAxis
     {
-        _isRotating = true;
-    }
-    
-    public void StopRotation()
-    {
-        _isRotating = false;
+        X,Y,Z
     }
 
-    public void UpdateAxis(RotationAxis newAxis)
+    public class Rotator : MonoBehaviour
     {
-        defaultAxis = newAxis;
-        
-        switch (defaultAxis)
+        [SerializeField] private Space defaultSpace;
+        [SerializeField] private RotationAxis defaultAxis;
+        [SerializeField] private float speed;
+        [SerializeField] private bool startRotatingOnStart = true;
+
+        private bool _isRotating;
+        private Vector3 _axis;
+
+        public float Speed => speed;
+
+
+        public void StartRotation()
         {
-            case RotationAxis.X:
-                _axis = Vector3.right;
-                break;
-                    
-            case RotationAxis.Y:
-                _axis = Vector3.up;
-                break;
-                    
-            case RotationAxis.Z:
-                _axis = Vector3.forward;
-                break;
+            _isRotating = true;
         }
-    }
 
-    private void Start()
-    {
-        UpdateAxis(defaultAxis);
-        
-        if(startRotatingOnStart)
-            StartRotation();
-    }
+        public void StopRotation()
+        {
+            _isRotating = false;
+        }
 
-    private void Update()
-    {
-        Rotate();
-    }
+        public void UpdateAxis(RotationAxis newAxis)
+        {
+            defaultAxis = newAxis;
 
-    private void Rotate()
-    {
-        if (!_isRotating)
-            return;
-        
-        transform.Rotate(_axis, speed * Time.deltaTime, defaultSpace);
+            switch (defaultAxis)
+            {
+                case RotationAxis.X:
+                    _axis = Vector3.right;
+                    break;
+
+                case RotationAxis.Y:
+                    _axis = Vector3.up;
+                    break;
+
+                case RotationAxis.Z:
+                    _axis = Vector3.forward;
+                    break;
+            }
+        }
+
+        private void Start()
+        {
+            UpdateAxis(defaultAxis);
+
+            if (startRotatingOnStart)
+                StartRotation();
+        }
+
+        private void Update()
+        {
+            Rotate();
+        }
+
+        private void Rotate()
+        {
+            if (!_isRotating)
+                return;
+
+            transform.Rotate(_axis, speed * Time.deltaTime, defaultSpace);
+        }
     }
 }

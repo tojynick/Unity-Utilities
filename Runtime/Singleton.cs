@@ -2,20 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Singleton<T> : MonoBehaviour where T : Singleton<T>
+namespace Utilities
 {
-    public static T Instance { get; private set; }
-    
-    protected virtual void Awake()
+    public class Singleton<T> : MonoBehaviour where T : Singleton<T>
     {
-        SetInstance();
-    }
+        public static T Instance { get; private set; }
     
-    private void SetInstance()
-    {
-        if(Instance)
-            Destroy(Instance);
+        protected virtual void Awake()
+        {
+            SetInstance();
+        }
+    
+        private void SetInstance()
+        {
+            if(Instance)
+                Destroy(Instance);
                 
-        Instance = (T) this;
+            Instance = (T) this;
+        }
     }
 }
+

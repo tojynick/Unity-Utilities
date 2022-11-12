@@ -1,0 +1,16 @@
+{
+    "name": "tojynick.UnityUtilities.Editor",
+    "rootNamespace": "Utilities",
+    "references": [
+        "GUID:3a68680e0b3e49d429844dad8c5b5a7e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
