@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "displayName": "Unity Utilities",
   "description": "Helpful tools and scripts for Unity.",
-  "author": {
+  "author":
+  {
     "name": "tojynick",
     "email": "tojynick@protonmail.com",
     "url": "https://tojynick.me"
   },
-  "type": "tool"
+  "type": "tool",
+    "documentationUrl": "https://tojynick.gitbook.io/unity-utilities/"
 }
