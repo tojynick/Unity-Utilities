@@ -8,7 +8,7 @@ You can install the package in Unity's Package Manager.
 1. Go to **"Windows"**
 2. Open **"Package Manager"**
 3. Click **the plus icon** in the top left
-4. Pres **"Add package from git URL...**
+4. Press **"Add package from git URL...**
 5. Enter https://github.com/tojynick/Unity-Utilities.git
 6. Press **"Add"**
 7. Enjoy 💖
