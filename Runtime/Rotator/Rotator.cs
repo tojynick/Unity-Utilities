@@ -29,6 +29,11 @@ namespace Utilities.Rotator
             _isRotating = false;
         }
 
+        public void UpdateSpace(Space newSpace)
+        {
+            space = newSpace;
+        }
+
         public void UpdateAxis(RotationAxis newAxis)
         {
             axis = newAxis;
