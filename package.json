@@ -1,14 +1,12 @@
 {
   "name": "com.tojynick.utilities",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "Unity Utilities",
   "description": "Helpful tools and scripts for Unity.",
-  "author":
-  {
+  "author": {
     "name": "tojynick",
     "email": "tojynick@protonmail.com",
     "url": "https://tojynick.me"
   },
-  "type": "tool",
-    "documentationUrl": "https://tojynick.gitbook.io/unity-utilities/"
+  "type": "tool"
 }

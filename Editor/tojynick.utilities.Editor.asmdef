@@ -1,10 +1,12 @@
 {
-    "name": "tojynick.UnityUtilities.Editor",
+    "name": "Utilities Editor",
     "rootNamespace": "Utilities",
     "references": [
         "GUID:3a68680e0b3e49d429844dad8c5b5a7e"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
